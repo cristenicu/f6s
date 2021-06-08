@@ -31,7 +31,7 @@ export default {
   },
 
   watch: {
-    messages: function (newMessages, oldMessages) {
+    messages: function (_newMessages, _oldMessages) {
       setTimeout(() => {
         this.$refs.conversation.scrollTop =
           this.$refs.conversation.scrollHeight;
